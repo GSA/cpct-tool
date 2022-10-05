@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+<head>
+    {% load static %}
+	<script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.2.0/dropzone.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.3/b-2.1.0/b-html5-2.1.0/b-print-2.1.0/fc-4.0.1/r-2.2.9/sc-2.0.5/datatables.min.css"/>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/pdfmake.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.3/b-2.1.0/b-html5-2.1.0/b-print-2.1.0/fc-4.0.1/r-2.2.9/sc-2.0.5/datatables.min.js"></script>
+<script type="text/javascript" src="https://bartaz.github.io/sandbox.js/jquery.highlight.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/plug-ins/1.11.3/features/searchHighlight/dataTables.searchHighlight.min.js"></script>
+
+    <style>
+        body{background-color:#13315C;padding:0;margin:0;font-family: benton-sans,"Helvetica Neue",helvetica,arial,sans-serif;}
+        #header{height:8px;background-color:#13315c;width:100%;color:white;font:8pt verdana;}
+        #header2{height:15px;background: linear-gradient(to right, #024D86, #8ECDEA);width:100%;border-top:1px solid #0b2545;border-bottom:0px solid #0b2545;}
+        #header3{min-height:60px;background-color:#8da9c4;width:100%;border-top:2px solid #ddd;}
+        .header4 {
+            background: linear-gradient(to right, #024D86, #8ECDEA);
+            content: '';
+            width: 100%;
+            position:relative;
+            top:0px;
+            height: 4px;
+        }
+        #main-form{border:1px solid #0b2545;background-color:#eef4ed;margin-left:auto;margin-right:auto;width:800px;border-radius:5px;padding:10px;}
+        a{color:#00528F;}
+        .ok-result{margin-left:auto;margin-right:auto;}
+        svg path{fill:red;}
+        .footer a{
+            color:white;
+        }
+        .row{margin:0;padding:0;}
+        #result td{font:1em 'Courier New';}
+        .callout{width:100%;padding:15px;margin:0;font:1em Verdana;border-bottom:2px solid white;}
+        .callout-success{background: linear-gradient(to right, #008000, #00A65A);color:white;}
+        .callout-danger{background: linear-gradient(to right, #C23321, #DD4B39);color:white;}
+        #top-bar{
+            -moz-border-radius: 0px;
+            -webkit-border-radius: 10px 10px 0px 0px;
+            border-radius: 10px 10px 0px 0px;
+            background-color:white;
+            font-weight:normal !important;
+
+        }
+        #top-bar a{
+        }
+        #result-table_wrapper{
+            margin-top:5px;padding:0;
+        }
+
+        h1 {
+            font-size: 36px;
+            line-height: 40px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #024D86;
+            line-height: 40px;
+            border-bottom: 1px solid #8ECDEA;
+            margin-bottom: 13px;
+            margin-top: 3px;
+            font-weight: 500;
+        }
+
+        h3 {
+            font-size: 20px;
+            line-height: 40px;
+            font-weight: 500;
+        }
+
+        h4 {
+            font-size: 18px;
+            line-height: 20px;
+            font-weight: normal;
+        }
+
+        h5 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        h6 {
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        #references {border-top: 1px solid #13315C; margin-top: 40px; font-size: 13px; color: #13315C; }
+        #notes {margin-top: 5px; margin-top: 5px; margin-bottom: 12px; font-style: italic; font-size: 14px; color: #13315C; }
+        #vertspacer {height: 10px}
+
+table.dataTable span.highlight {
+  background-color: #FFFF88;
+  border-radius: 0.28571429rem;
+}
+
+table.dataTable span.column_highlight {
+  background-color: #ffcc99;
+  border-radius: 0.28571429rem;
+}
+
+.anchor a {
+    display: block;
+    position: relative;
+    top: -145px;
+    visibility: hidden;
+}
+
+li { margin: 6px 0; }
+
+
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+
+<body style="height:100%;padding:0;margin:0;">
+
+<div style="height:100%;position:relative;margin-top:0px;">
+
+    <title>Certificate Profile Conformance Tool</title>
+
+<div id="collapse-menu" style="position:fixed;top:0;width:100%;z-index:2;">
+    <div id="header"><span style="float:left;margin:3px;"></span></div>
+
+    <div id="header2" style="text-align:center;"></div>
+
+    <div id="header3">
+        <div class="row">
+            <div class="col col-md-12" style="margin:0;padding:0;background-color:white">
+                <nav id="anav" class="navbar navbar-expand navbar-light bg-light" style="height:100px;max-width:1200px;margin-left:auto;margin-right:auto;background-color:white !important;text-align:center;">
+
+                    <div id="left-logo"></div>
+                    <div style="margin-left:auto;margin-right:auto;">
+                    <div id="centered-logo"><a id="logo" class="navbar-brand" href="/">
+                        <img src="{% static "GSAStar.jpg" %}" style="height:60px;margin-top:0px;margin-left:0px;float:left;" />
+                        <div style="font-family: benton-sans,'Helvetica Neue',helvetica,arial,sans-serif;color:#024D86;margin:0;padding:0;margin-top:15px;font-weight:bold;margin-left:10px;font-size:.8em;line-height:1em;text-align:left;">
+                            Certificate<br/>
+                            Profile<br/>
+                            Conformance</div>
+                    </a></div>
+
+
+        </div>
+        <button class="navbar-toggler navbar-toggler-right" style="float:right !important" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button><br clear="both"/>
+      </nav>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="header4"></div>
+</div>
+
+
+    <div id="content-row" class="row" style="padding-top:100px;min-height:520px;background-color:#eee;">
+        <div class="col-md-12">
+            <div style="padding-left:10px;padding-right:10px;">
+                <div id=result style="max-width:1200px;margin-left:auto;margin-right:auto;margin-top:50px;background-color:white;margin-bottom:20px;">
+
+                    <div style="padding:20px;">
+
+
+
+
+
+<h2>GSA IDManagement.gov Privacy Policy</h2>
+
+<p>The GSA IDManagement.gov website automatically collects some basic system information to help measure site performance and volume of visitors. This information is also used to help GSA develop the site, analyze patterns of usage, address problem areas, and make the site more useful for you.</p>
+
+<p>For detailed information, please see <a href="https://www.idmanagement.gov/privacy-policy/" target="_blank" rel="noopener noreferrer">IDManagement.gov's Privacy Policy</a>.</p>
+
+<h2>Certificate Profile Conformance Tool (CPCT) - Additional Privacy Policy</h2>
+
+<p>No authentication is required to use CPCT and the information that you provide is protected:</p>
+<ul>
+                        <li>No uploaded certificates are saved.</li>
+                        <li>No certificate test results are saved.</li>
+</ul>
+
+<h2>Questions or Comments?</h2>
+
+<p>If you have a privacy-related question or comment, please <a href="mailto:fpki@gsa.gov">email us at fpki@gsa.gov</a></p>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+<div class="row" style="background-color:white;margin:0;padding:0;">
+        <div class="header4"></div>
+            <div class="col-md-12" style="text-align:center;background-color:white;">
+                <div style="padding:10px;">
+                 <a href="/contact-us/">Contact Us</a> | <a href="https://github.com/GSA/fpkilint/">Source Code</a> | <a href="/privacy-policy/">Privacy Policy</a> | <a href="/help/">Help</a>
+                </div>
+            </div>
+        <div class="header4" style="height:10px;"></div>
+</div>
+
+<div class="row footer" style="margin:0;padding:0;">
+    <div class="col-md-12" style="text-align:center;background-color:#13315C;color:white;margin:0;padding:10px;">
+        <a href="https://www.idmanagement.gov/"><img src="{% static "idm_logo.png" %}" style="border:0;height:50px;" /></a>
+    </div>
+</div>
+
+
+</div>
+
+</body>
+
+</html>
