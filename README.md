@@ -1,2 +1,2 @@
-# cpct-docker
-CPCT Tool Source and Dockerfile for build
+# cpct-docker-demo
+CPCT Tool Docker Demo for Demo Use Only
