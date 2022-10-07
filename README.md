@@ -14,7 +14,7 @@ To install and run the *Dockerized* **CPCT Tool**, download or clone this repo, 
 
 The files you download or clone should look like this. `Double Click` on the `start.cmd` file to start the process of building and running the *Docker Image*.
 <br/><br/>
-![](docs\images\local_files.png)
+![](docs/images/local_files.png)
 
 ## or
 
