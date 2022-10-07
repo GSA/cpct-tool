@@ -1,1 +1,0 @@
-web: gunicorn cpct.wsgi --workers 2

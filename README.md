@@ -1,2 +1,33 @@
-# cpct-docker-demo
-CPCT Tool Docker Demo for Demo Use Only
+# CPCT Tool Docker Only Repo
+
+This repo contains the files needed to run the **CPCT Tool** locally on your machine as a *Docker Image*.
+[**Docker Desktop**](https://www.docker.com) is required to use this tool. If your organization has *Software Policies* inplace, installing
+*Docker Desktop* may require a call to your company's `Help Deskt` for support. After you install *Docker Desktop* is installed on your system and running, you can return here to download or clone this repo to your computer, and run the `start.cmd` batch file that is located in the main directory along side the `Dockerfile`. Files in the resources directory are there to be used by the *Dockerfile* when it is building the *Dockerized Image* for **Docker Desktop**.
+
+## Running the Dockerized CPCT TOOl Image
+
+To install and run the *Dockerized* **CPCT Tool**, download or clone this repo, then navigate to the location where you placed the files, then **Double Click** on the `start.cmd` file. 
+> Make sure `Docker Desktop` is running before issuing any of the below commands. 
+
+
+### Using the downloaded or cloned file:
+
+The files you download or clone should look like this. `Double Click` on the `start.cmd` file to start the process of building and running the *Docker Image*.
+<br/><br/>
+![](docs\images\local_files.png)
+
+## or
+
+Open a `commpand` window with `cmd.exe` and run the following command in the directory of the *Dockerfile* and *start.cmd*.  
+```shell
+Dockerfile  README.md  resources  start.cmd
+ > start.cmd
+```
+
+## Docker Desktop:
+
+This should `Build`, `Start` the *Docker Image*, once finised, your default `Web Browser` should open, displaying the `main` page of the **Docker Desktop CPCT Tool**, and navigate to the local only address of: **127.0.0.1:8000**. You can now use the *CPCT Tool* to check certificates. 
+
+> The command window will close on its own. 
+
+
