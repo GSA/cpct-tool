@@ -30,4 +30,12 @@ This should `Build`, `Start` the *Docker Image*, once finised, your default `Web
 
 > The command window will close on its own. 
 
+## Running the CPCT Tool
 
+Once you have the **CPCT Tool** *Docker Image* installed and running, you **DO NOT** have to `rerun` the `start.cmd` file. This is only needed to initially `Build` and `Start` the *Docker Desktop CPCT Tool*. 
+
+> **Note:** If you do `rerun` the `start.cmd` file again, this is not a problem. It will run the same as it did before, but will not build another `Docker Image` file. Since nothing has changed in the `Docker Image`, it will start another `instance` of the same file it download before, with the same `Image ID`, but with a different `Tag ID` number. 
+
+**This is OK, if you feel you have too many instances running or hosted inside of Docker Desktop, feel free to stop and delete them. You can rerun the `start.cmd` to recreate and run a new image at anytime.*  
+
+-- **Docker Desktop CPCT Tool**
