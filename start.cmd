@@ -31,12 +31,12 @@ echo;
 
 sleep 5
 @REM Start the default Web Browser
-set message3=Status: Opening CPCT in your default Web Browser
+set message3=Status: Opening your default Web Browser to: http://127.0.0.1:8000
 echo %message3%
 echo;
-set message3=Status: Thank you for using the Docker Desktop CPCT Tool.
+set message3=Status: Thank you for using the Dockerized Desktop version of the CPCT Tool.
 echo %message3%
-set message3=    (This window will automatically closed)
+set message3=              (This window will automatically closed)
 echo %message3%
 sleep 15
 
