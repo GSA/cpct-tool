@@ -8,9 +8,12 @@ sleep 2
 set message1=Status: Starting build of the Docker Desktop CPCT Tool Image
 echo %message1%
 echo;
+echo You are running: 
+docker --version
+echo;
 docker build -t desktop-cpct:%instance% .
 echo;
-set message1=Status: Docker Image created... 
+set message1=Status: Your Docker Image was created... 
 echo %message1%
 echo;
 
@@ -25,11 +28,13 @@ set message2=Status: Your Docker Image ID is:
 echo %message2%
 docker run -d -p 127.0.0.1:8000:8000 desktop-cpct:%instance%
 echo;
+echo;
 set message2=Status: Your Docker Image is running...
 echo %message2% 
+docker ps
 echo;
 
-sleep 5
+sleep 10
 @REM Start the default Web Browser
 set message3=Status: Opening your default Web Browser to: http://127.0.0.1:8000
 echo %message3%
