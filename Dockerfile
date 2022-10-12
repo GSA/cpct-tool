@@ -14,7 +14,7 @@ RUN git clone https://github.com/claytonjbarnette/fpkilint.git /opt/gsa
 # Remove files to replace with modified files
 RUN rm /opt/gsa/cpct/cpct/settings.py
 RUN rm /opt/gsa/cpct/requirements.txt
-RUN chmod +x /opt/gsa/cpct/fpkilint/der2ascii 
+RUN chmod +x /opt/gsa/cpct/fpkilint/der2ascii
 
 # Copy the modified files to their location
 COPY resources/settings.py /opt/gsa/cpct/cpct/settings.py
