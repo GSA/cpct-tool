@@ -2,7 +2,7 @@
 
 This repo contains the files needed to run the **Docker Desktop CPCT Tool** locally on your machine as a *Docker Image*.
 [**Docker Desktop**](https://www.docker.com) is required to use this tool. If your organization has *Software Policies* inplace, installing
-*Docker Desktop* may require a call to your company's `Help Desk` for support. Additional information can be found [here](). 
+*Docker Desktop* may require a call to your company's `Help Desk` for support. Additional information can be found [here](https://docs.docker.com/desktop/install/windows-install/). 
 
 After *Docker Desktop* is installed on your system and running, you can return here to download or clone this repo to your computer, and run the `start.cmd` batch file that is located in the main directory along side the `Dockerfile`. Files in the resources directory are there to be used by the *Dockerfile* when it is building the *Dockerized Image* for **Docker Desktop**.
 
