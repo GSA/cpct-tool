@@ -36,13 +36,14 @@ Dockerfile  README.md  resources  start.cmd
 ---
 ## Docker Desktop:
 
-This should `Build` and `Start` the *Docker Image*, once finished, your default `Web Browser` should open, displaying the `main` page of the **Docker Desktop CPCT Tool**. 
+This should `Build` and `Start` the *Docker Image*, once finished, your default `Web Browser` should open, displaying the `main` page of the **Docker Desktop CPCT Tool**. You can now use the **Docker Desktop CPCT Tool** to check certificates. If you have used this tool before, the functinality should be the same, the only difference is now your have the *CPCT Tool* running locally on your computer.
 
-- View the `CPCT Main Page` by going to the local only address of: **127.0.0.1:8000**. 
-> Note: The `cmd.exe` command window will close on its own. If your `default` **Web Browser** does not open, check your taskbar for already open instances of your *Web Browser*.
+- View the `CPCT Main Page` by going to the local only address of: **127.0.0.1:8000**.
+    - Note: The `cmd.exe` command window will close on its own. 
+
+> If your `default` **Web Browser** does not open, check your taskbar for already open instances of your *Web Browser*.
 
 
-You can now use the **Docker Desktop CPCT Tool** to check certificates. If you have used this tool before, the functinality should be the same, the only difference is now your have the *CPCT Tool* running locally on your computer.
 
 
 ---
@@ -53,6 +54,8 @@ Once you have the **CPCT Tool** *Docker Image* installed and running, you **DO N
 > **Note:** If you do `rerun` the `start.cmd` file again, this is not a problem. It will run the same as it did before, but will not build another `Docker Image` file. Since nothing has changed in the `Docker Image`, it will start another `instance` of the same file it download before, with the same `Image ID`, but with a different `Tag ID` number. 
 
 **This is OK, if you feel you have too many instances running or hosted inside of Docker Desktop, feel free to stop and delete them. You can rerun the `start.cmd` to recreate and run a new image at anytime.*  
+
+---
 
 ## Troubleshooting Docker Desktop:
 
