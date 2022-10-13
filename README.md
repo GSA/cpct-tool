@@ -38,12 +38,15 @@ Dockerfile  README.md  resources  start.cmd
 
 ## Docker Desktop:
 
-This should `Build` and `Start` the *Docker Image*, once finished, your default `Web Browser` should open, displaying the `main` page of the **Docker Desktop CPCT Tool**. You can now use the **Docker Desktop CPCT Tool** to check certificates. If you have used this tool before, the functinality should be the same, the only difference is now your have the *CPCT Tool* running locally on your computer.
+This should `Build` and `Start` the *Docker Image*, once finished, your default `Web Browser` should open, displaying the `main` page of the **Docker Desktop CPCT Tool**. You can now use the **Docker Desktop CPCT Tool** to check certificates. 
+
 
 - View the `CPCT Main Page` by going to the local only address of: **127.0.0.1:8000**.
     - Note: The `cmd.exe` command window will close on its own. 
 
 > If your `default` **Web Browser** does not open, check your taskbar for already open instances of your *Web Browser*.
+
+> **Memo:** *If you have used this tool before, the functinality should be the same, the only difference is now your have the *CPCT Tool* running locally on your computer*.
 
 
 
