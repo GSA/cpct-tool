@@ -15,7 +15,8 @@ To install and run the *Dockerized* **CPCT Tool** do one of the following:
 Then navigate to the location where you downloaded or cloned the files.
 
 > NOTE: Make sure `Docker Desktop` is running before issuing any of the below commands.
----
+
+
 ## Creating and Running the Docker Desktop CPCT Tool Image:
 
 The files you download or clone should look like the image below, if so, `Double Click` on the `start.cmd` file to start the process of building and running the *Docker Image*.
@@ -33,7 +34,8 @@ Open a `commpand` window with `cmd.exe` and run the following command in the dir
 Dockerfile  README.md  resources  start.cmd
  > start.cmd
 ```
----
+
+
 ## Docker Desktop:
 
 This should `Build` and `Start` the *Docker Image*, once finished, your default `Web Browser` should open, displaying the `main` page of the **Docker Desktop CPCT Tool**. You can now use the **Docker Desktop CPCT Tool** to check certificates. If you have used this tool before, the functinality should be the same, the only difference is now your have the *CPCT Tool* running locally on your computer.
@@ -45,8 +47,6 @@ This should `Build` and `Start` the *Docker Image*, once finished, your default 
 
 
 
-
----
 ## Running the CPCT Tool
 
 Once you have the **CPCT Tool** *Docker Image* installed and running, you **DO NOT** have to `rerun` the `start.cmd` file. This is only needed to initially `Build` and `Start` the *Docker Desktop CPCT Tool*. 
@@ -55,7 +55,7 @@ Once you have the **CPCT Tool** *Docker Image* installed and running, you **DO N
 
 **This is OK, if you feel you have too many instances running or hosted inside of Docker Desktop, feel free to stop and delete them. You can rerun the `start.cmd` to recreate and run a new image at anytime.*  
 
----
+
 
 ## Troubleshooting Docker Desktop:
 
@@ -66,6 +66,6 @@ net localgroup docker-users <user> /add
 ```
 *This may require you to contact your organization's `Help Desk` for assistance. Once this requirement setting is satisfied, **Docker Desktop** should run as expected*.
 
----
+
 <br><br>
 -- **Docker Desktop CPCT Tool**
