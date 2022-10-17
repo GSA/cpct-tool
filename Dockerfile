@@ -8,17 +8,21 @@ FROM python:3.9
 
 
 # Get clone of repo from standard fpkilint repo, put into gsa folder
-RUN git clone https://github.com/claytonjbarnette/fpkilint.git /opt/gsa
+RUN git clone https://github.com/GSA/fpkilint.git /opt/gsa
 
 
 # Remove files to replace with modified files
 RUN rm /opt/gsa/cpct/cpct/settings.py
-RUN rm /opt/gsa/cpct/requirements.txt
 RUN chmod +x /opt/gsa/cpct/fpkilint/der2ascii
 
 # Copy the modified files to their location
 COPY resources/settings.py /opt/gsa/cpct/cpct/settings.py
-COPY resources/requirements.txt /opt/gsa/cpct/requirements.txt
+
+# Uncomment to remove the existing requirements.txt to replace it with your own
+ # Note: Don't forget to uncomment the COPY function below for this file: see: resources/requirements.txt
+# RUN rm /opt/gsa/cpct/requirements.txt
+ # Uncomment to copy your own requirements.txt into the Docker Image
+# COPY resources/requirements.txt /opt/gsa/cpct/requirements.txt
 
 # Docker Working Directory 
 # The RUN, CMD commands run from this context 
