@@ -4,7 +4,6 @@ This repo contains the files needed to run the **CPCT Tool** locally on your mac
 [**Docker Desktop**](https://www.docker.com) is required to use this tool. If your organization has *Software Policies* inplace, installing
 *Docker Desktop* may require a call to your company's `Help Desk` for support. Additional information can be found [here](https://docs.docker.com/desktop/install/windows-install/). 
 
----
 
 ## What is the CPCT Tool:
 The CPCT Tool is an application that supports FPKI annual reviews and compliance by analyzing public X.509 certificates for conformance to a specified FPKI profile:
