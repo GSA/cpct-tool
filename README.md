@@ -55,7 +55,7 @@ Once finished, your default `Web Browser` should open, displaying the `main` pag
 
 - The `CPCT Main Page` opens to a local only address of: **127.0.0.1:8000**.
 - If your `default` **Web Browser** does not open, check your taskbar for already open instances of your *Web Browser*.
-- - ***Note: The command (terminal) window will close on its own.** 
+- **Note: The command (terminal) window will close on its own.** 
 
 If you have used this tool before, the functinality should be the same, the only difference is now your have the *CPCT Tool* running locally on your computer.
 
