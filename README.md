@@ -14,7 +14,7 @@ The CPCT Tool is an application that supports FPKI annual reviews and compliance
 - FPKI/Federal Bridge
  -PIV-Interoperable (PIV-I)
 
-CPCT use can enhance detection of certificate profile issues during FPKI development and maintenance phases. In conjunction with the *Card Conformance Tool (CCT)*, the *Certificate Profile Conformance Tool (CPCT)* enables **FPKI stakeholders** to perform remote testing. 
+CPCT use can enhance detection of certificate profile issues during FPKI development and maintenance phases. In conjunction with the *Card Conformance Tool (CCT)*, the *Certificate Profile Conformance Tool (CPCT)* enables **FPKI stakeholders** to perform local testing. 
 
 ## Downloading the CPCT Tool:
 
