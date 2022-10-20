@@ -27,9 +27,9 @@ To download the CPCT Tool, do one of the following:
 2. Use the **Download ZIP** option of the big green *Code* button at the top of this GitHub repo.
 3. Clone this repo using [Git](https://git-scm.com) with `git clone https://github.com/GSA/cpct-tool.git`
 
-> **Note:** If using the `ZIP` file, make sure you `Right-Click` on the `ZIP` file, then select `Extract All...` to extract the files to your computer before clicking on the `start.exe` file.
-
 Then navigate to the location where you downloaded or cloned the files for the next step.
+
+> **Note:** If using the `ZIP` file, make sure you `Right-Click` on the `ZIP` file, then select `Extract All...` to extract the files to your computer before clicking on the `start.exe` file.
 
 > **NOTE:** Make sure `Docker Desktop` is running before issuing any of the below commands.
 
@@ -37,7 +37,7 @@ Then navigate to the location where you downloaded or cloned the files for the n
 
 Inside the downloaded folder, you should see a file named `start.exe`, `Double Click` on this file to start the process. This will open a `command`(terminal) window to start the building and running process. Once prompted, type `Y` or `y` to continue, the `build` and `run` process will start.
 
-> **MEMO:** if you get a security warning on Windows 10 or later after clicking on `start.exe`, this is normal, click the `More info` link, then the `Run anyway` button. 
+> **MEMO:** if you get a security warning on Windows 10 or later after clicking on `start.exe`, this is normal, click the `More info` link, then the `Run anyway` button to continue. 
 
 ## or with `cmd.exe`
 
