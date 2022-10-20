@@ -16,7 +16,7 @@ CPCT use can enhance detection of certificate profile issues during FPKI develop
 
 ## Downloading the CPCT Tool:
 
-After *Docker Desktop* is installed on your system and running, you can return here to download or clone this repo to your computer, and run the `start.exe` file that is located in the main directory along side the `Dockerfile`. 
+After *Docker Desktop* is installed on your system and running, you can return here to download or clone this repo to your computer for the next step. 
 
 > Note: Files in the resources directory are there to be used by the *Dockerfile* while it is building the *Dockerized Image* for **Docker Desktop**.
 
