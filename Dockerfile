@@ -18,23 +18,25 @@ RUN chmod +x /opt/gsa/cpct/fpkilint/der2ascii
 # Copy the modified files to their location
 COPY resources/settings.py /opt/gsa/cpct/cpct/settings.py
 
-# Uncomment to remove the existing requirements.txt to replace it with your own
- # Note: Don't forget to uncomment the COPY function below for this file: see: resources/requirements.txt
+# Custom requirements.txt
+ # Uncomment to remove the existing requirements.txt to replace it with your own
+ # Note: Don't forget to uncomment the COPY function below in this file: see: resources/requirements.txt
 # RUN rm /opt/gsa/cpct/requirements.txt
- # Uncomment to copy your own requirements.txt into the Docker Image
+ # If uncommenting above, also uncomment below to copy your own requirements.txt into the Docker Image
 # COPY resources/requirements.txt /opt/gsa/cpct/requirements.txt
 
 # Docker Working Directory 
 # The RUN, CMD commands run from this context 
 WORKDIR /opt/gsa/cpct/
 
-
-# pip install required python packages
-    # Django==3.2.16
+# fpkilint's requirements.txt is used by default
+ # pip installs the following required python packages
+    # Django==3.2.17
     # pytz==2020.1
     # whitenoise==5.2.0
     # gunicorn==20.1.0
     # asn1crypto==1.4.0
+    # [Snyk stuff]
 RUN python -m pip install -r requirements.txt
 
 # Default port for Django Development Server
