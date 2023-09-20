@@ -12,7 +12,7 @@ FROM python:3.9
 RUN git clone https://github.com/GSA/fpkilint.git /opt/gsa
 
 # Development Branch Testing: (remember to comment out the RUN line above before using the one below)
-# For testing a Development Branch, uncomment the line below, and update the branchname 
+# For testing a Development Branch, uncomment the line below, and update the <branchname> 
 # RUN git clone -b <branchname> --single-branch https://github.com/GSA/fpkilint.git /opt/gsa
 
 # Remove files to replace with modified files
