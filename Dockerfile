@@ -6,10 +6,14 @@
     # Tag: 3.9
 FROM python:3.9
 
-
+# Production Branch of fpkilint: 
 # Get clone of repo from standard fpkilint repo, put into gsa folder
+# Meno: remember to comment out the line below before doing any Development Branch Testing
 RUN git clone https://github.com/GSA/fpkilint.git /opt/gsa
 
+# Development Branch Testing: (remember to comment out the RUN line above before using the one below)
+# For testing a Development Branch, uncomment the line below, and update the <branchname> 
+# RUN git clone -b <branchname> --single-branch https://github.com/GSA/fpkilint.git /opt/gsa
 
 # Remove files to replace with modified files
 RUN rm /opt/gsa/cpct/cpct/settings.py
