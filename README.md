@@ -1,4 +1,4 @@
-# CPCT Tool v1.0.0
+# CPCT Tool v2.0.0
 
 This repo contains the files needed to run the **CPCT Tool** locally on your machine as a *Docker Image*.
 [**Docker Desktop**](https://www.docker.com) is required to use this tool. 
@@ -13,6 +13,13 @@ The CPCT Tool is an application that supports FPKI annual reviews and compliance
 - Common Policy SSP Program
 - FPKI/Federal Bridge
 - PIV-Interoperable (PIV-I)
+
+
+## Certificate Profile changes:
+  - Common SSP v2.5
+  - FPKI/Federal Bridge  v3.2
+  - PIV-I (merged into FBCA v3.2)
+  - PIV-I 1.2 and 1.3 (legacy) 
 
 CPCT use can enhance detection of certificate profile issues during FPKI development and maintenance phases. In conjunction with the *Card Conformance Tool (CCT)*, the *Certificate Profile Conformance Tool (CPCT)* enables **FPKI stakeholders** to perform local testing. 
 
