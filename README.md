@@ -60,7 +60,7 @@ This will start the `build` and `run` process, once prompted, type `Y` or `y` to
 
 Once finished, your default `Web Browser` should open, displaying the `main` page of the **CPCT Tool**, if you see this, the CPCT Tool is now running locally on your computer and you can now use it to check certificates. 
 
-- The `CPCT Main Page` opens to a local only address of: **127.0.0.1:8000**.
+- The `CPCT Main Page` opens to a local only address of: **127.0.0.1:8000** or **http://localhost:8000**.
 - If your `default` **Web Browser** does not open, check your taskbar for already open instances of your *Web Browser*.
 - **Note: The command (terminal) window will close on its own.** 
 
@@ -70,7 +70,7 @@ If you have used the cloud version of this tool before, the functinality should 
 
 Once you have the **CPCT Tool** *Docker Image* installed and running, you **DO NOT** have to `rerun` the `start.exe` file. This is only needed to initially `build` and `run` the *Docker Image*.
 
-> **Note:** If you do happen to `run` the `start.exe` file again, this is not a problem. It will run the same as it did before, but will not build another `Docker Image` file. Since nothing has changed in the `Docker Image`, it will start another `instance` of the same *Docker Image* and complain about your local port `8000` is alreay in use and a instance new instance of the Image will display inside of *Docker Desktop* running but with no ports specified, but with a different `Tag ID` number. If you wish, you can safely remove the extra instances and continue using the CPCT Tool as before.  
+> **Note:** If you do happen to `run` the `start.exe` file again, this is not a problem. It will run the same as it did before, but will not build another `Docker Image` file. Since nothing has changed in the `Docker Image`, it will start another `instance` of the same *Docker Image* and complain about your local port `8000` is alreay in use, a new instance of the Image will display inside of *Docker Desktop* running but with no ports specified, but with a different `Tag ID` number. If you wish, you can safely remove this extra instances and continue using the CPCT Tool as before.  
 
 **How do I access the tool the next time I need to use it?**
 
