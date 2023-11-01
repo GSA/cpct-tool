@@ -60,7 +60,7 @@ This will start the `build` and `run` process, once prompted, type `Y` or `y` to
 
 Once finished, your default `Web Browser` should open, displaying the `main` page of the **CPCT Tool**, if you see this, the CPCT Tool is now running locally on your computer and you can now use it to check certificates. 
 
-- The `CPCT Main Page` opens to a local only address of: **127.0.0.1:8000** or **http://localhost:8000**.
+- The `CPCT Main Page` opens to a local only address of: `http://127.0.0.1:8000` or `http://localhost:8000`.
 - If your `default` **Web Browser** does not open, check your taskbar for already open instances of your *Web Browser*.
 - **Note: The command (terminal) window will close on its own.** 
 
