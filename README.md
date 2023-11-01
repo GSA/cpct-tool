@@ -25,7 +25,7 @@ CPCT use can enhance detection of certificate profile issues during FPKI develop
 
 ## Downloading the CPCT Tool:
 
-After *Docker Desktop* is installed on your system and running, you can return here to download or clone this repo to your computer for the next step. 
+After *Docker Desktop* is installed on your system and running, you can return here to download the latest release of the CPCT Tool to your computer. 
 
 > Note: Files in the resources directory are there to be used by the *Dockerfile* while it is building the *Dockerized Image* for **Docker Desktop**.
 
@@ -64,24 +64,24 @@ Once finished, your default `Web Browser` should open, displaying the `main` pag
 - If your `default` **Web Browser** does not open, check your taskbar for already open instances of your *Web Browser*.
 - **Note: The command (terminal) window will close on its own.** 
 
-If you have used this tool before, the functinality should be the same, the only difference is now your have the *CPCT Tool* running locally on your computer.
+If you have used the cloud version of this tool before, the functinality should be the same, the only difference is now your have the *CPCT Tool* running locally on your computer.
 
 ## Running the CPCT Tool:
 
 Once you have the **CPCT Tool** *Docker Image* installed and running, you **DO NOT** have to `rerun` the `start.exe` file. This is only needed to initially `build` and `run` the *Docker Image*.
 
-> **Note:** If you do happen to `run` the `start.exe` file again, this is not a problem. It will run the same as it did before, but will not build another `Docker Image` file. Since nothing has changed in the `Docker Image`, it will start another `instance` of the same *Docker Image* and complain about your local port `8000` is alreay in use and a instance new instance of the Image will display inside of *Docker Desktop* not running, but with a different `Tag ID` number. If you wish, you can safely remove the extra instances and continue using the CPCT Tool as before.  
+> **Note:** If you do happen to `run` the `start.exe` file again, this is not a problem. It will run the same as it did before, but will not build another `Docker Image` file. Since nothing has changed in the `Docker Image`, it will start another `instance` of the same *Docker Image* and complain about your local port `8000` is alreay in use and a instance new instance of the Image will display inside of *Docker Desktop* running but with no ports specified, but with a different `Tag ID` number. If you wish, you can safely remove the extra instances and continue using the CPCT Tool as before.  
 
 **How do I access the tool the next time I need to use it?**
 
 You have a few options:
-1. Keep the `Docker Image` running, so the __next time__ you need to use the *CPCT Tool*, open the following address in your web browser: `http://127.0.0.1:8000` to access the CPCT Tools main page.
-2. If you do not use the tool that often, then you can click the `stop` button beside the *Docker Desktop Image* for the *CPCT Tool*, this will stop the Docker Image. You can restart it again by clicking the `start` button to start the **Docker Image** again. Remember to open your web browser to:`http://127.0.0.1:8000` to use the tool again. Feel free to bookmark this page for simpler access in the future. 
-3. If you have limited space on your computer or need to conserve space, simply delete the **Docker Image** for the *CPCT Tool* inside of **Docker Desktop**. When you want to `create` and `run` the **Docker Image** for the *CPCT Tool* again, simply `rerun` the `start.exe` again.
+1. Keep the `Docker Image` running, so the __next time__ you need to use the *CPCT Tool*, open the following address in your web browser: `http://127.0.0.1:8000` or `http://localhost:8000` to access the CPCT Tools main page.
+2. If you do not use the tool that often, then you can click the `stop` button beside the *Docker Desktop Image* for the *CPCT Tool*, this will stop the Docker Image. You can restart it again by clicking the `start` button to start the **Docker Image** again. Remember to open your web browser to:`http://127.0.0.1:8000` or `http://localhost:8000` to use the tool again. Feel free to bookmark this page for simpler access in the future. 
+3. If you have limited space on your computer or need to conserve space, simply delete the **Docker Image** for the *CPCT Tool* inside of **Docker Desktop**. When you want to `run` the **Docker Image** for the *CPCT Tool* again, simply `rerun` the `start.exe` again.
 
-> **Memo:** If you have `deleted` the `zip file` and/or the `cpct-tool` folder for the `CPCT Tool`, you can download it again and `rerun` the `start.exe` file like you did before.
+> **Memo:** If you have `deleted` the `zip file` and/or the `cpct-tool` folder for the `CPCT Tool`, you can download it again here under `Releases` and `rerun` the `start.exe` file like you did before.
 
-**It is OK, if you find that you have multiple or too many instances of the *CPCT Tool* running or hosted inside of Docker Desktop. Feel free to `stop` and `delete` them. You can `download` the `zip` file again if needed and rerun the `start.exe` again to `recreate` and `run` the *Docker Image* anytime.*  
+**It is OK, if you find that you have multiple or many instances of the *CPCT Tool* running or hosted inside of Docker Desktop. Feel free to `stop` and `delete` them if needed. You can `download` the `zip` file again and rerun the `start.exe` again to `recreate` and `run` the *Docker Image* anytime.*  
 
 
 ## Troubleshooting Docker Desktop:
