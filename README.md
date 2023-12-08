@@ -40,6 +40,21 @@ Then navigate to the location where you downloaded or cloned the files for the n
 
 > **NOTE:** Make sure `Docker Desktop` is running before issuing any of the below commands.
 
+
+## Troubleshooting Docker Desktop:
+
+Upon installation of Docker Desktop, Docker requires computer users to be placed in the `docker-users` group, If your account is not an admin account and you require assistance from your organization's IT Department to make changes to your computer, such as installing new software. Have your IT Department enter the following commands through **Windows Powershell** to add you to the `docker-users` group. 
+
+Replace `<user>` with your account user name.  
+
+```shell
+net localgroup docker-users <user> /add
+```
+> Please make sure the above command is run within the Windows Powershell and not the standard Command prompt for it to work correctly.
+
+Once this requirement is satisfied, **Docker Desktop** should run as expected*.
+
+
 ## Creating and Running the CPCT Tool Docker Image:
 
 Inside the downloaded folder, you should see a file named `start.exe`, `Double Click` on this file to start the process. This will open a `command`(terminal) window to start the building and running process. Once prompted, type `Y` or `y` to continue, the `build` and `run` process will start.
@@ -82,16 +97,6 @@ You have a few options:
 > **Memo:** If you have `deleted` the `zip file` and/or the `cpct-tool` folder for the `CPCT Tool`, you can download it again here under `Releases` and `rerun` the `start.exe` file like you did before.
 
 **It is OK, if you find that you have multiple or many instances of the *CPCT Tool* running or hosted inside of Docker Desktop. Feel free to `stop` and `delete` them if needed. You can `download` the `zip` file again and rerun the `start.exe` again to `recreate` and `run` the *Docker Image* anytime.*  
-
-
-## Troubleshooting Docker Desktop:
-
-If your admin account is different to your user account, you must add the user to the docker-users group:
-
-```shell
-net localgroup docker-users <user> /add
-```
-*This may require you to contact your organization's `Help Desk` for assistance. Once this requirement setting is satisfied, **Docker Desktop** should run as expected*.
 
 
 <br><br>
