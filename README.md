@@ -78,6 +78,14 @@ Dockerfile  README.md  resources/  start.exe*
 ```
 This will start the `build` and `run` process, once prompted, type `Y` or `y` to continue, the `build` and `run` process will start. 
 
+## Mac and Linux (BETA)
+
+For Mac and Linux, run the `mac-linux.sh` script located in the same folder as the `start.exe`
+```shell
+$ ./mac-linux.sh
+```
+> Please make sure Docker is running before running this script and you may have to issue: `chmod +x mac-linux.sh` for it to run on the command line.
+
 ## Docker Desktop:
 
 Once finished, your default `Web Browser` should open, displaying the `main` page of the **CPCT Tool**, if you see this, the CPCT Tool is now running locally on your computer and you can now use it to check certificates. 
