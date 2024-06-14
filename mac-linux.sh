@@ -1,7 +1,8 @@
 # Mac CPCT Tool Installer for Docker Desktop
 echo " "
 echo "This will install the CPCT Tool v2.0.1 for Docker Desktop"
-echo "Please make sure you have Docker Desktop installed and/or running"
+echo " "
+echo "Please make sure you have Docker Desktop installed and running."
 echo " "
 sleep 20
 # Start building the Docker Image 
@@ -20,7 +21,7 @@ echo "The image name in Docker Desktop for the CPCT Tool is: cpct-tool-v2:latest
 echo " "
 echo "Loading the CPCT Tool image into Docker Desktop..."
 echo " "
-sleep 10
+sleep 5
 echo "Please wait... starting the CPCT Tool 2.0.1"
 echo " "
 # Runs the installed CPCT Tool Docker image on your local at port 8000 
