@@ -18,7 +18,7 @@ sleep 10
 # Share the name of the Docker Image to look for in Docker Desktop
 echo "The image name in Docker Desktop for the CPCT Tool is: cpct-tool-v2:latest"
 echo " "
-echo "Installing the CPCT Tool Docker image..."
+echo "Loading the CPCT Tool image into Docker Desktop..."
 echo " "
 sleep 10
 echo "Please wait... starting the CPCT Tool 2.0.1"
