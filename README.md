@@ -83,9 +83,9 @@ This will start the `build` and `run` process, once prompted, type `Y` or `y` to
 
 For Mac and Linux, run the `mac-linux.sh` script located in the same folder as the `start.exe`
 
-> First, make sure Docker Desktop is installed and running. 
+- First, make sure Docker Desktop is installed and running. 
 
-> Please make sure you run `chmod +x mac-linux.sh` first on the install script before attempting to run it on the command line. This script is unsupported and is only provided for convenience to experienced users. 
+- Second, make sure you run `chmod +x mac-linux.sh` first on the install script before attempting to run it on the command line. This script is unsupported and is only provided for convenience to experienced users. 
 
 ```shell
 $ ./mac-linux.sh
