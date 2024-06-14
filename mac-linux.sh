@@ -6,7 +6,13 @@ echo " "
 sleep 20
 # Start building the Docker Image 
 echo "Building Docker image for the CPCT Tool v2.0.1 ..."
-sudo docker build -t cpct-tool-v2:latest .
+# On both Mac and Linux make sure docker desktop is up and running
+# Then on both, the below command run with not issues. 
+ # To Troubleshoot visit: 
+ # Mac: https://docs.docker.com/desktop/install/mac-install/
+ # Linux: https://docs.docker.com/desktop/install/linux-install/
+# Run the builder which builds the docker image
+docker build -t cpct-tool-v2:latest .
 echo " "
 sleep 10
 # Share the name of the Docker Image to look for in Docker Desktop
@@ -16,7 +22,10 @@ echo "Installing the CPCT Tool Docker image..."
 echo " "
 sleep 10
 echo "Please wait... starting the CPCT Tool 2.0.1"
-sudo docker run -d -p 127.0.0.1:8000:8000 -t cpct-tool-v2:latest
+echo " "
+# Runs the installed CPCT Tool Docker image on your local at port 8000 
+# exp: (https://127.0.0.1:8000 or http://localhost:8000)
+docker run -d -p 127.0.0.1:8000:8000 -t cpct-tool-v2:latest
 echo " "
 echo "Installation of the CPCT Tool v2.0.1 is complete."
 echo " "
