@@ -17,6 +17,7 @@ echo " "
 sleep 10
 echo "Please wait... starting the CPCT Tool 2.0.1"
 sudo docker run -d -p 127.0.0.1:8000:8000 -t cpct-tool-v2:latest
+echo " "
 echo "Installation of the CPCT Tool v2.0.1 is complete."
 echo " "
 sleep 10
