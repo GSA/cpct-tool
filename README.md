@@ -1,4 +1,4 @@
-# CPCT Tool v2.0.1
+# CPCT Tool v2.0.0
 
 This repo contains the files needed to run the **CPCT Tool** locally on your machine as a *Docker Image*.
 [**Docker Desktop**](https://www.docker.com) is required to use this tool. 
