@@ -26,7 +26,7 @@ The CPCT Tool is an application that supports FPKI annual reviews and compliance
 - Security update: `Django` from `3.2.23` to `3.2.24`
 - Version Bump: `Django` from `3.2.24` to `3.2.25`
 - Version Bump: `gunicorn` from `20.1.0` to `22.0.0`
-- Optional `Mac` and `Linux` installer: `mac-linux.sh` *(BETA)*
+- Unsupported `Mac` and `Linux` installer: `mac-linux.sh` *(BETA)*
 - Updated `README.md` for Mac and Linux
 
 CPCT use can enhance detection of certificate profile issues during FPKI development and maintenance phases. In conjunction with the *Card Conformance Tool (CCT)*, the *Certificate Profile Conformance Tool (CPCT)* enables **FPKI stakeholders** to perform local testing. 
