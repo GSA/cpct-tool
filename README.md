@@ -1,4 +1,4 @@
-# CPCT Tool v2.0.0
+# CPCT Tool v2.0.1
 
 This repo contains the files needed to run the **CPCT Tool** locally on your machine as a *Docker Image*.
 [**Docker Desktop**](https://www.docker.com) is required to use this tool. 
@@ -19,7 +19,15 @@ The CPCT Tool is an application that supports FPKI annual reviews and compliance
   - Common SSP v2.2
   - FPKI/Federal Bridge  v2.0
   - PIV-I (merged into FBCA v2.0)
-  - PIV-I 1.2 and 1.3 (legacy) 
+  - PIV-I 1.2 and 1.3 (legacy)
+
+## Updates:
+- Updated `start.exe` to `v2.0.1` (no code changes)
+- Security update: `Django` from `3.2.23` to `3.2.24`
+- Version Bump: `Django` from `3.2.24` to `3.2.25`
+- Version Bump: `gunicorn` from `20.1.0` to `22.0.0`
+- Convenient installer for `Mac` and `Linux`: `mac-linux.sh` (unsupported)
+- Updated `README.md` for Mac and Linux
 
 CPCT use can enhance detection of certificate profile issues during FPKI development and maintenance phases. In conjunction with the *Card Conformance Tool (CCT)*, the *Certificate Profile Conformance Tool (CPCT)* enables **FPKI stakeholders** to perform local testing. 
 
@@ -50,7 +58,7 @@ Replace `<user>` with your account user name.
 ```shell
 net localgroup docker-users <user> /add
 ```
-> Please make sure the above command is run within the Windows Powershell and not the standard Command prompt for it to work correctly.
+> Please make sure the above command is run within the **Windows Powershell** and not the standard *Command prompt* for it to work correctly.
 
 Once this requirement is satisfied, **Docker Desktop** should run as expected*.
 
@@ -66,10 +74,23 @@ Inside the downloaded folder, you should see a file named `start.exe`, `Double C
 Open a `commpand` window and navigate to the directory where you downloaded the CPCT Tool, then type the following:  
 
 ```shell
-Dockerfile  README.md  resources/  start.exe*
+Dockerfile  mac-linux.sh README.md  resources/  start.exe 
  > .\start.exe
 ```
 This will start the `build` and `run` process, once prompted, type `Y` or `y` to continue, the `build` and `run` process will start. 
+
+## Mac and Linux (BETA)
+
+For Mac and Linux, run the `mac-linux.sh` script located in the same folder as the `start.exe`
+
+- First, make sure Docker Desktop is installed and running. 
+- Second, make sure you run `chmod +x mac-linux.sh` first on the install script before attempting to run it on the command line.
+
+> This script is unsupported and is only provided for convenience to experienced users. 
+
+```shell
+$ ./mac-linux.sh
+```
 
 ## Docker Desktop:
 
