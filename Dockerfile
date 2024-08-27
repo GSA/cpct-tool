@@ -8,7 +8,7 @@ FROM python:3.9
 
 # Production Branch of fpkilint: 
 # Get clone of repo from standard fpkilint repo, put into gsa folder
-# Meno: remember to comment out the line below before doing any Development Branch Testing
+# Memo: remember to comment out the line below before doing any Development Branch Testing
 RUN git clone https://github.com/GSA/fpkilint.git /opt/gsa
 
 # Development Branch Testing: (remember to comment out the RUN line above before using the one below)
